@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.1.9" icons="true">  
+  <object id="1" language="java" name="eg.edu.alexu.csd.oop.db.MyDataBase" project="DBModel" 
+    file="/DBModel/src/eg/edu/alexu/csd/oop/db/MyDataBase.java" binary="false" label="myDataBase" type="class" 
+    autoSize="true">    
+    <position height="-1" width="-1" x="166" y="0"/>    
+    <execution id="2">      
+      <position height="238" width="163" x="5" y="137"/>    
+    </execution>    
+    <execution id="5">      
+      <position height="34" width="7" x="83" y="205"/>    
+    </execution>  
+  </object>  
+  <object id="6" language="java" name="eg.edu.alexu.csd.oop.db.sqlQuery.InterpreterFactory" project="DBModel" 
+    file="/DBModel/src/eg/edu/alexu/csd/oop/db/sqlQuery/InterpreterFactory.java" binary="false" 
+    label="interpreterFactory" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="312" y="0"/>    
+    <execution id="4">      
+      <position height="170" width="224" x="400" y="171"/>    
+    </execution>  
+  </object>  
+  <object id="10" language="java" name="eg.edu.alexu.csd.oop.db.sqlQuery.Interpreter" project="DBModel" 
+    file="/DBModel/src/eg/edu/alexu/csd/oop/db/sqlQuery/Interpreter.java" binary="false" label="interpreter" 
+    type="class" autoSize="true">    
+    <position height="-1" width="-1" x="562" y="0"/>    
+    <execution id="9">      
+      <position height="34" width="224" x="400" y="273"/>    
+    </execution>  
+  </object>  
+  <message id="3" 
+    operation="createInterpreter(eg.edu.alexu.csd.oop.db.sqlQuery.InterpreterFactory.QueryType):eg.edu.alexu.csd.oop.db.sqlQuery.Interpreter" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="7" asynchronous="true">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="5"/>  
+  </message>  
+  <message id="8" operation="Interpreter(eg.edu.alexu.csd.oop.db.sqlQuery.Interpreter[])" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="9"/>  
+  </message>
+</sequence-diagram>
